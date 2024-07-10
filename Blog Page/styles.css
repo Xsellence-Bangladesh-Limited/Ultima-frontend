@@ -3,6 +3,9 @@
 /* Google Font (start) */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /* Google Font (end) */
 
@@ -12,26 +15,281 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6{
-    margin-bottom: 0 !important;
+:root{
+    --primary-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --secondary-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --title-font-family: "Sora", sans-serif;
+    --normal-text-font-family: "Poppins", sans-serif;
 }
 
-body{
-    font-family: "Inter", sans-serif;;
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 0.875rem;
 }
 
 /* Global CSS (end) */
 
 /* Main Content (start) */
 
+.my-container{
+    width: 60rem;
+    margin: 0 auto;
+}
+
 .blog-main-heading{
+    font-family: var(--title-font-family);
     font-weight: 600;
 }
 
 .recent-blog-post-container{
     display: flex;
-    gap: 20px;
+    gap: 1.125rem;
     flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+.recent-single-blog-post{
+    width: 32%;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    color: #000;
+    align-self: flex-start;
+    transition: all 0.3s ease-in;
+}
+
+.recent-single-blog-post:hover{
+    transition: all 0.3s ease-in;
+}
+
+.recent-single-blog-post:hover {
+    box-shadow: var(--secondary-box-shadow);
+}
+
+.recent-single-blog-post-image{
+    width: 100%;
+    height: 11.125rem;
+    overflow: hidden;
+    border-top-right-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+}
+
+.recent-single-blog-post-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent-single-blog-post-body{
+    padding: 1.063rem;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.recent-single-post-title {
+    transition: all 0.3s ease-in;
+}
+
+.recent-single-blog-post:hover .recent-single-post-title{
+    margin-top: 2px;
+}
+
+.recent-single-post-tag{
+    padding: 0.313rem 0.938rem;
+    border: 1px solid #4599FA;
+    background-color: #E8F2FF;
+    color: #4599FA;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.recent-single-post-title{
+    font-family: var(--title-font-family);
+    font-weight: 600;
+}
+
+.recent-single-post-description{
+    font-family: var(--normal-text-font-family);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.recent-single-post-creator{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.recent-single-post-creator-image{
+    width: 2.188rem;
+    height: 2.188rem;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.recent-single-post-creator-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent-single-post-creator-name{
+    font-family: var(--title-font-family);
+    font-weight: 600;
+}
+
+.recent-single-post-date-of-creation{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recent-single-post-date-of-creation p{
+    font-family: var(--normal-text-font-family);
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.date-dot-separator{
+    width: 0.188rem;
+    height: 0.188rem;
+    background-color: #4599FA;
+    border-radius: 100%;
+}
+
+.all-blog-posts-and-filter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.all-blog-posts-filter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    padding: 4px 10px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    position: relative;
+}
+
+.all-blog-posts-filter-label{
+    font-family: var(--normal-text-font-family);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.all-blog-posts-filter-label-arrow{
+    font-size: 12px;
+}
+
+.all-blog-posts-filter-menu-parent{
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    display: none;
+}
+
+.all-blog-posts-filter-menu{
+    width: 100%;
+    box-shadow: var(--secondary-box-shadow);
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: var(--normal-text-font-family);
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-blog-posts-filter-menu-item{
+    padding: 10px 10px;
+}
+
+.all-blog-posts-filter-menu-item:not(:last-of-type){
+    border-bottom: 1px solid #f3f3f3;
 }
 
 /* Main Content (end) */
+
+/* Responsiveness (start) */
+
+@media (min-width: 0px){
+    .my-container{
+        width: 100%;
+        padding: 0 0.625rem;
+    }
+
+    .recent-single-blog-post{
+        width: 100%;
+    }
+    .recent-single-blog-post-image{
+        height: 15.625rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .my-container{
+        width: 34rem;
+    }
+    .recent-single-blog-post{
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .my-container{
+        width: 45rem;
+    }
+
+    .recent-single-blog-post{
+        width: 48%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .my-container{
+        width: 60rem;
+    }
+
+    .recent-single-blog-post{
+        width: 32%;
+    }
+
+    .recent-single-blog-post-image{
+        height: 11.125rem;
+    }
+ 
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .my-container{
+        width: 60rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .my-container{
+        width: 71.25rem;
+    }
+}
+
+/* Responsiveness (end) */
