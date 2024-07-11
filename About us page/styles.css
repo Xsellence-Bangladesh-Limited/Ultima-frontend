@@ -1,0 +1,268 @@
+/* Global CSS (start) */
+
+/* Google Font (start) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Google Font (end) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --secondary-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --title-font-family: "Sora", sans-serif;
+    --normal-text-font-family: "Poppins", sans-serif;
+    --heading-font-weight: 600;
+    --normal-title-font-weight: 400;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 0.875rem;
+}
+
+/* Global CSS (end) */
+
+/* Main Content (start) */
+
+.my-container{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Main content (start) */
+
+/* Welcome Section (start) */
+
+.welcome-section{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6.25rem;
+}
+
+.welcome-section-left{
+    width: 40%;
+}
+
+.introduction-image{
+    width: 100%;
+    height: 22.188rem;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.introduction-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-section-right{
+    width: 55%;
+}
+
+.introduction-title{
+    font-family: var(--title-font-family);
+    font-weight: var(--normal-title-font-weight);
+    background: linear-gradient(263.57deg, #FF1284 20%, #7647FE 63%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: inline-block;
+}
+
+.introduction-heading{
+    font-family: var(--title-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+.introduction-description-text{
+    font-family: var(--normal-text-font-family);
+    font-weight: var(--normal-title-font-weight);
+    font-size: 0.813rem;
+    line-height: 1.6rem;
+}
+
+.see-details-btn{
+    padding: 0.5rem 1.563rem;
+    border: none;
+    outline: none;
+    border-radius: 0.313rem;
+    background-color: #0C79F9;
+    font-family: var(--title-font-family);
+    font-weight: var(--normal-title-font-weight);
+    color: #F9FDFF;
+    font-size: 0.813rem;
+}
+
+/* Welcome Section (end) */
+
+/* Client Introduction (start) */
+
+.client-introduction{
+    margin-bottom: 3.125rem;
+}
+
+.client-introduction-title{
+    font-family: var(--title-font-family);
+    font-weight: var(--normal-title-font-weight);
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 0.938rem;
+}
+
+.client-introduction-title .number-of-clients{
+    color: #0C79F9
+}
+
+.all-client-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5rem;
+}
+
+.client-logo{
+    width: 5.313rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.client-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Client Introduction (end) */
+
+/* Features (start) */
+
+.features{
+    padding: 4.063rem 0;
+    background-color: #F9FAFB;
+    margin-bottom: 3.125rem;
+}
+
+.features-title{
+    font-family: var(--title-font-family);
+    font-weight: var(--normal-title-font-weight);
+    background: linear-gradient(263.57deg, #FF1284 20%, #7647FE 63%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    display: inline-block;
+}
+
+.features-heading{
+    font-family: var(--title-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+.features-short-description{
+    font-family: var(--normal-text-font-family);
+    font-weight: var(--normal-title-font-weight);
+    font-size: 0.813rem;
+    line-height: 1.4rem;
+}
+
+.features-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.563rem;
+}
+
+.feature{
+    width: 20%;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 0.625rem;
+}
+
+.feature-logo{
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+}
+
+.feature-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-title{
+    font-family: var(--normal-text-font-family);
+    font-weight: 500;
+}
+
+.feature-text-description{
+    font-family: var(--normal-text-font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.125rem;
+}
+
+/* Features (end) */
+
+/* Main content (end) */
+
+/* Responsiveness (start) */
+
+@media (min-width: 0px){
+    .my-container{
+        width: 100%;
+        padding: 0 0.625rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .my-container{
+        width: 34rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .my-container{
+        width: 45rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .my-container{
+        width: 60rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .my-container{
+        width: 60rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .my-container{
+        width: 71.25rem;
+    }
+}
+
+/* Responsiveness (end) */
