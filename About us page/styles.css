@@ -209,14 +209,14 @@ p{
 .feature-title{
     font-family: var(--normal-text-font-family);
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .feature-text-description{
     font-family: var(--normal-text-font-family);
     font-weight: 400;
-    font-size: 10px;
-    line-height: 1rem;
+    font-size: 11px;
+    line-height: 1.125rem;
 }
 
 /* Features (end) */
