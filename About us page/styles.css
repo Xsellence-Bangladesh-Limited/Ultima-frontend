@@ -279,28 +279,28 @@ p{
 .experience-growth-data-title-container{
     position: absolute;
     top: 50%;
-    left: 54%;
+    left: 120px;
     transform: translate(-50%, -50%);
 }
 
 .conference-growth-data-title-container{
     position: absolute;
     top: 50%;
-    left: 64%;
+    left: 140px;
     transform: translate(-50%, -50%);
 }
 
 .professionals-growth-data-title-container{
     position: absolute;
     top: 50%;
-    left: 58%;
+    left: 128px;
     transform: translate(-50%, -50%);
 }
 
 .project-growth-data-title-container{
     position: absolute;
     top: 50%;
-    left: 53%;
+    left: 118px;
     transform: translate(-50%, -50%);
 
 }
