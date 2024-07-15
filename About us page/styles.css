@@ -509,6 +509,71 @@ p{
         width: 100%;
         padding: 0 0.625rem;
     }
+
+    .welcome-section-left, .welcome-section-right {
+        width: 100%;
+    } 
+
+    .welcome-section{
+        gap: 1rem;
+    }
+
+    .all-client-logo-container{
+        gap: 2rem;
+    }
+
+    .features-container{
+        flex-wrap: wrap;
+    }
+
+    .feature{
+        width: 100%;
+    }
+
+    .all-growth-data{
+        flex-wrap: wrap;
+    }
+
+    .growth-data{
+        width: 48%;
+    }
+
+    .all-growth-data{
+        justify-content: center;
+    }
+
+    .offers-main-content{
+        flex-wrap: wrap;
+        gap: 23px;
+    }
+
+    .offers-main-content-left-side, .offers-main-content-right-side{
+        width: 100%;
+    }
+
+    .offers-main-content-right-side{
+        justify-content: center;
+    }
+
+    .offer-image-2{
+        display: none;
+    }
+
+    .offer-image-1-container{
+        width: 100%;
+    }
+
+    .team-members-container{
+        flex-wrap: wrap;
+    }
+
+    .team-member{
+        width: 100%;
+    }
+
+    .team-member-image{
+        height: 300px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -516,12 +581,44 @@ p{
     .my-container{
         width: 34rem;
     }
+
+    .feature{
+        width: 48%;
+    }
+
+    .growth-data{
+        width: 48%;
+    }
+
+    .offer-image-1-container{
+        height: 350px;
+    }
+
+    .team-member{
+        width: 48%;
+    }
+
+    .team-member-image{
+        height: 175px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .my-container{
         width: 45rem;
+    } 
+
+    .feature{
+        width: 31%;
+    }
+
+    .growth-data{
+        width: 31%;
+    }
+
+    .team-member{
+        width: 31%;
     }
 }
 
@@ -530,6 +627,68 @@ p{
     .my-container{
         width: 60rem;
     }
+
+    .welcome-section-left{
+        width: 40%;
+    }
+
+    .welcome-section-right{
+        width: 55%;
+    }
+
+    .welcome-section{
+        gap: 2.5rem;
+    }
+
+    .all-client-logo-container{
+        gap: 5rem;
+    }
+
+    .features-container{
+        flex-wrap: nowrap;
+    }
+
+    .feature{
+        width: 25%;
+    }
+
+    .all-growth-data{
+        flex-wrap: nowrap;
+    }
+
+    .growth-data{
+        width: 25%;
+    }
+
+    .offers-main-content{
+        flex-wrap: nowrap;
+        gap: 70px;
+    }
+
+    .offers-main-content-left-side, .offers-main-content-right-side{
+        width: 50%;
+    }
+
+    .offer-image-2{
+        display: block;
+    }
+
+    .offer-image-1-container{
+        width: 310px;
+    }
+
+    .offer-image-1-container{
+        height: 255px;
+    }
+
+    .team-members-container{
+        flex-wrap: nowrap;
+    }
+
+    .team-member{
+        width: 25%;
+    }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
