@@ -45,6 +45,10 @@ p{
 
 /* Feature Section (start) */
 
+.feature{
+    margin-bottom: 150px;
+}
+
 .contact-us-tag{
     font-family: var(--title-font-family);
     font-weight: var(--normal-title-font-weight);
@@ -72,7 +76,6 @@ p{
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 150px;
 }
 
 .single-feature{
@@ -157,6 +160,7 @@ p{
 }
 
 .get-in-touch-input{
+    width: 100%;
     border: 1px solid #E6E6E6;
     border-radius: 5px;
     padding: 5px 10px;
@@ -264,13 +268,39 @@ p{
         width: 100%;
         padding: 0 0.625rem;
     }
+    .all-features-container{
+        flex-wrap: wrap;
+    }
 
+    .single-feature{
+        width: 100%;
+    }
+
+    .get-in-touch-left-side{
+        display: none;
+    }
+
+    .get-in-touch-right-side{
+        width: 100%;
+    }
+
+    .feature{
+        margin-bottom: 60px;
+    }
+
+    .name-input{
+        gap: 12px; 
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .my-container{
         width: 34rem;
+    }
+
+    .single-feature{
+        width: 48%;
     }
 
 }
@@ -280,6 +310,14 @@ p{
     .my-container{
         width: 45rem;
     } 
+
+    .single-feature{
+        width: 31%;
+    }
+
+    .name-input{
+        gap: 25px; 
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -288,6 +326,21 @@ p{
         width: 60rem;
     }
 
+    .all-features-container{
+        flex-wrap: nowrap;
+    }
+
+    .get-in-touch-left-side{
+        display: block;
+    }
+
+    .get-in-touch-right-side{
+        width: 40%;
+    }
+
+    .feature{
+        margin-bottom: 150px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
