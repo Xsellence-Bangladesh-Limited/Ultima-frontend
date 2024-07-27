@@ -4,7 +4,10 @@ $(document).ready(function () {
   var swiper = new Swiper(".mySwiper", {
     cssMode: true,
     loop: true,
-    autoplay: true,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
