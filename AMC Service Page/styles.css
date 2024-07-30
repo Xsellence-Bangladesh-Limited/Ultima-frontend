@@ -515,13 +515,23 @@ p {
 
   .offers-main-content {
     flex-wrap: wrap;
+    gap: 23px;
   }
 
   .offers-main-content-right-side {
+    justify-content: center;
+  }
+
+  .offer-image-2 {
     display: none;
   }
 
-  .offers-main-content-left-side {
+  .offer-image-1-container {
+    width: 100%;
+  }
+
+  .offers-main-content-left-side,
+  .offers-main-content-right-side {
     width: 100%;
   }
 
@@ -583,6 +593,10 @@ p {
 
   .client-image {
     height: 23.125rem;
+  }
+
+  .offer-image-1-container {
+    height: 350px;
   }
 
   .testimonial .swiper-button-prev {
@@ -650,13 +664,24 @@ p {
 
   .offers-main-content {
     flex-wrap: nowrap;
+    gap: 70px;
   }
 
   .offers-main-content-right-side {
+    display: flex;
+  }
+
+  .offer-image-1-container {
+    width: 310px;
+    height: 255px;
+  }
+
+  .offer-image-2 {
     display: block;
   }
 
-  .offers-main-content-left-side {
+  .offers-main-content-left-side,
+  .offers-main-content-right-side {
     width: 50%;
   }
 
