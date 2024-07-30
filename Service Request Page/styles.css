@@ -213,6 +213,7 @@ p {
 
 .testimonial {
   margin-bottom: 5.625rem;
+  height: fit-content;
 }
 
 .testimonial-title {

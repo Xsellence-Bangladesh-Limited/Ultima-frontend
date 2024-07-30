@@ -53,6 +53,7 @@ p {
 
 .main-banner-slider {
   margin-bottom: 4.625rem;
+  height: fit-content;
 }
 
 .banner-slide {
@@ -382,6 +383,7 @@ p {
 
 .testimonial {
   margin-bottom: 5.625rem;
+  height: fit-content;
 }
 
 .testimonial-title {
