@@ -2,7 +2,6 @@ $(document).ready(function () {
   // Testimonial Slider (start)
 
   var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -15,7 +14,6 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    keyboard: true,
   });
 
   //   Testimonial Slider (end)

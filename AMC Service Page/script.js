@@ -19,7 +19,6 @@ $(document).ready(function () {
   // Testimonial Slider (start)
 
   var swiper = new Swiper(".testimonial-slider .mySwiper", {
-    cssMode: true,
     loop: true,
     autoplay: {
       delay: 5000,
