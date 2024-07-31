@@ -724,7 +724,7 @@ p {
   }
 
   .testimonial .swiper-button-next {
-    right: 53%;
+    right: 51%;
     transform: translateX(-50%);
   }
 }
@@ -740,6 +740,11 @@ p {
 @media (min-width: 1400px) {
   .my-container {
     width: 71.25rem;
+  }
+
+  .testimonial .swiper-button-next {
+    right: 53%;
+    transform: translateX(-50%);
   }
 }
 
